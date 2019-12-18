@@ -31,6 +31,6 @@ public class NoResultExample {
 		} catch (Exception e) {
 			System.out.println("[실행 예외 발생] " + e.getMessage()); 
 		}
-		
+		executorService.shutdown();
 	}
 }
