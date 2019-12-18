@@ -1,0 +1,24 @@
+package thread;
+
+public class YieldExample {
+	public static void main(String[] args) {
+		ThreadC threadC = new ThreadC();
+		ThreadD threadD = new ThreadD();
+		
+		threadC.start();
+		threadD.start();
+		
+		try {Thread.sleep(3000);} catch (InterruptedException e) {}
+		threadC.work = false;
+		
+		try {Thread.sleep(3000);} catch (InterruptedException e) {}
+		threadD.work = false;
+		
+		try {Thread.sleep(3000);} catch (InterruptedException e) {}
+		threadC.stop = true;
+		threadD.stop = true;
+		
+	}
+	
+}
+
