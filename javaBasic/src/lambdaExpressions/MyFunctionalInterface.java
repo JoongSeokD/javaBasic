@@ -7,5 +7,8 @@ public interface MyFunctionalInterface {
 //	void method();
 	
 	// 매개변수가 있는 람다식 메소드
-	void method(int x);
+//	void method(int x);
+	
+	// 리턴값이 있는 람다식 메소드
+	int method(int x, int y);
 }
