@@ -20,7 +20,10 @@ public class FilteringExample {
 		System.out.println();
 		
 		// Áßº¹ Á¦°Å ÈÄ ÇÊÅÍ¸µ
-		names.stream().distinct().filter( n-> n.startsWith("È«")).forEach(System.out::println);
+		names.stream()
+			.distinct()
+			.filter( n-> n.startsWith("È«"))
+			.forEach(System.out::println);
 		
 		
 	}
